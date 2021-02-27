@@ -1,0 +1,87 @@
+$font-mon: Montserrat
+$font-ral: Raleway
+$font-rob: Roboto
+body
+    margin: 0 auto
+    width: 1920px
+a
+    text-decoration: none
+
+/** .container
+ margin: 0 auto
+ width: 1920px **/
+
+.header
+    background: url(../img/bg_header.jpg) no-repeat
+    &__wrapper
+        padding: 40px 320px 50px 320px
+        display: flex
+        flex-direction: column
+        align-items: center
+    &__info
+        display: flex
+        justify-content: space-between
+        width: 100%
+    &__menu
+        font-family: $font-mon
+        align-items: center
+        display: flex
+        & a
+            margin-right: 24px
+            color: white
+            font-weight: 300
+            font-size: 14px
+            &:last-of-type
+                margin-right: 55px
+            &:hover
+                color: #C7B299
+        & svg
+            margin-right: 30px
+            &:last-of-type
+                margin-right: 0px
+    &__slider
+        padding: 330px 0 310px 0
+        width: 570px
+        text-align: center
+        &-h1
+            font-family: $font-ral
+            font-size: 52px
+            color: white
+            font-weight: 600
+            line-height: 80px
+        & p
+            color: white
+        &-text-top
+            font-family: $font-ral
+            font-size: 35px
+            font-weight: 600
+        &-text-bot
+            font-family: $font-mon
+            font-size: 16px
+            font-weight: 400
+            margin-bottom: 40px
+            line-height: 20px
+        & a
+            display: inline-block
+            padding: 20px 40px
+            color: white
+            font-weight: 300
+            font-size: 14px
+            border-radius: 3px
+            background: #988574
+        &-dots
+            display: flex
+            width: 90px
+            height: 15px
+            justify-content: space-between
+            align-items: center
+            &-dot
+                width: 10px
+                height: 10px
+                background: rgba(255, 255, 255, 0.5)
+                border-radius: 10px
+                &:hover
+                    border: solid 1px #D3C1AD
+                    background: none
+                    transform: scale(2);
+                    box-sizing: border-box
