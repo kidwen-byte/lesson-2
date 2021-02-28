@@ -9,12 +9,14 @@ a {
 
 .btn-a {
   display: inline-block;
-  padding: 20px 40px;
+  padding: 19px 40px 18px 40px;
   color: white;
-  font-weight: 300;
   font-size: 14px;
   border-radius: 3px;
   background: #988574;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-family: Roboto;
 }
 
 .header {
