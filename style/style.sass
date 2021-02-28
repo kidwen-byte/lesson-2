@@ -1,0 +1,186 @@
+$font-mon: Montserrat
+$font-ral: Raleway
+$font-rob: Roboto
+
+a
+    text-decoration: none
+
+.container
+    width: 1280px
+    margin: 0 auto
+
+.btn-a
+    display: inline-block
+    padding: 19px 40px 18px 40px
+    color: white
+    font-size: 14px
+    border-radius: 3px
+    background: #988574
+    text-transform: uppercase
+    font-weight: 400
+    font-family: $font-rob
+
+.header
+    background: url(../img/bg_header.jpg) no-repeat
+    background-position-x: center
+    &__wrapper
+        padding: 40px 0px 50px 0px
+        display: flex
+        flex-direction: column
+        align-items: center
+    &__info
+        display: flex
+        justify-content: space-between
+        width: 100%
+    &__menu
+        font-family: $font-mon
+        align-items: center
+        display: flex
+        & a
+            margin-right: 24px
+            color: white
+            font-weight: 300
+            font-size: 14px
+            &:last-of-type
+                margin-right: 55px
+            &:hover
+                color: #C7B299
+        & svg
+            margin-right: 30px
+            &:last-of-type
+                margin-right: 0px
+    &__slider
+        padding: 315px 0 315px 0
+        width: 570px
+        text-align: center
+        position: relative
+        &-h1
+            font-family: $font-ral
+            font-size: 52px
+            color: white
+            font-weight: 600
+            line-height: 80px
+        & p
+            color: white
+        &-text-top
+            font-family: $font-ral
+            font-size: 35px
+            font-weight: 600
+        &-text-bot
+            font-family: $font-mon
+            font-size: 16px
+            font-weight: 400
+            margin-bottom: 40px
+            line-height: 20px
+        &-arrow-left
+            top: 40%
+            position: absolute
+            right: 100%
+            margin-right: 475px
+        &-arrow-right
+            top: 40%
+            position: absolute
+            left: 100%
+            margin-left: 475px
+        &-dots
+            display: flex
+            width: 90px
+            height: 15px
+            justify-content: space-between
+            align-items: center
+            &-dot
+                width: 10px
+                height: 10px
+                background: rgba(255, 255, 255, 0.5)
+                border-radius: 10px
+                &:hover
+                    border: solid 1px #D3C1AD
+                    background: none
+                    transform: scale(1.5)
+                    box-sizing: border-box
+
+.services
+    padding: 85px 0 90px 0
+    &__wrapper
+        display: flex
+        justify-content: space-around
+    &__list
+        width: 270px
+        &:hover path
+            fill: #C7B299
+        &:hover .services__list-heading
+            color: #C7B299
+        &:hover .services__list-info::after
+            border-color: #C7B299
+        & svg
+            margin: auto
+            display: block
+            margin-bottom: 30px
+        &-heading
+            text-align: center
+            font-family: $font-ral
+            font-weight: 600
+            font-size: 22px
+            margin-bottom: 20px
+            color: #555555
+        &-info
+            text-align: center
+            font-family: $font-mon
+            font-weight: 300
+            font-size: 14px
+            line-height: 17px
+            color: #000000
+            &::after
+                content: ''
+                border-bottom: 3px solid #F1EEE9
+                display: block
+                width: 70px
+                margin: 0 auto
+                margin-top: 30px
+
+.idea
+    padding-top: 80px
+    background: #FBFAF8
+    &__wrapper
+        text-align: center
+        & h2
+            font-family: $font-ral
+            font-weight: 600
+            font-size: 30px
+            margin-bottom: 20px
+            color: #555555
+        & p
+            margin: auto
+            padding-bottom: 40px
+            width: 770px
+            font-family: $font-mon
+            font-weight: 300
+            font-size: 16px
+            line-height: 20px
+            color: #8C8C8C
+        & img
+            display: block
+            width: 100%
+            margin-bottom: -1px
+
+.theme
+    background: radial-gradient(94.87% 15543.47% at 4.58% 100%, #211B19 0%, #4E3326 100%)
+    padding: 44px 0 41px 0
+    &__wrapper
+        display: flex
+        justify-content: space-between
+    & h3
+        font-family: $font-ral
+        font-size: 28px
+        font-weight: 400
+        color: white
+        margin-bottom: 6px
+        line-height: 32px
+        & span
+            color: #C7B299
+    & p
+        font-family: $font-mon
+        font-size: 18px
+        font-weight: 400
+        color: #615855
+        line-height: 22px
