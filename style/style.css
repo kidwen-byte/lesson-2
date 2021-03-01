@@ -22,6 +22,7 @@ a {
 .header {
   background: url(../img/bg_header.jpg) no-repeat;
   background-position-x: center;
+  background-size: cover;
 }
 
 .header__wrapper {
