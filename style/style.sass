@@ -2,6 +2,24 @@ $font-mon: Montserrat
 $font-ral: Raleway
 $font-rob: Roboto
 
+h1
+    font-family: $font-ral
+    font-size: 52px
+    color: white
+    font-weight: 600
+    line-height: 80px
+
+h2
+    font-family: $font-ral
+    font-weight: 600
+    font-size: 30px
+    color: #555555
+p
+    font-family: $font-mon
+    font-weight: 300
+    font-size: 16px
+    line-height: 20px
+    color: #8C8C8C
 a
     text-decoration: none
 
@@ -9,7 +27,7 @@ a
     width: 1280px
     margin: 0 auto
 
-.btn-a
+.btn
     display: inline-block
     padding: 19px 40px 18px 40px
     color: white
@@ -55,12 +73,6 @@ a
         width: 570px
         text-align: center
         position: relative
-        &-h1
-            font-family: $font-ral
-            font-size: 52px
-            color: white
-            font-weight: 600
-            line-height: 80px
         & p
             color: white
         &-text-top
@@ -101,15 +113,15 @@ a
                     box-sizing: border-box
 
 .services
-    padding: 85px 0 90px 0
     &__wrapper
+        padding: 85px 0 90px 0
         display: flex
         justify-content: space-around
     &__list
         width: 270px
         &:hover path
             fill: #C7B299
-        &:hover .services__list-heading
+        &:hover .services__list-header
             color: #C7B299
         &:hover .services__list-info::after
             border-color: #C7B299
@@ -117,7 +129,7 @@ a
             margin: auto
             display: block
             margin-bottom: 30px
-        &-heading
+        &-header
             text-align: center
             font-family: $font-ral
             font-weight: 600
@@ -140,36 +152,27 @@ a
                 margin-top: 30px
 
 .idea
-    padding-top: 80px
     background: #FBFAF8
     &__wrapper
+        padding-top: 80px
         text-align: center
-        & h2
-            font-family: $font-ral
-            font-weight: 600
-            font-size: 30px
-            margin-bottom: 20px
-            color: #555555
-        & p
-            margin: auto
-            padding-bottom: 40px
-            width: 770px
-            font-family: $font-mon
-            font-weight: 300
-            font-size: 16px
-            line-height: 20px
-            color: #8C8C8C
-        & img
-            display: block
-            width: 100%
-            margin-bottom: -1px
+    &__header
+        margin-bottom: 20px
+    &__info
+        margin: auto
+        padding-bottom: 40px
+        width: 770px
+    & img
+        display: block
+        width: 100%
+        margin-bottom: -1px
 
 .theme
     background: radial-gradient(94.87% 15543.47% at 4.58% 100%, #211B19 0%, #4E3326 100%)
-    padding: 44px 0 41px 0
     &__wrapper
         display: flex
         justify-content: space-between
+        padding: 44px 0 41px 0
     & h3
         font-family: $font-ral
         font-size: 28px
@@ -179,9 +182,58 @@ a
         line-height: 32px
         & span
             color: #C7B299
-    & p
+    &__text
         font-family: $font-mon
         font-size: 18px
         font-weight: 400
         color: #615855
         line-height: 22px
+
+.projects
+    & input[type="radio"]:checked+label
+        background-color: #998575
+        color: white
+    & input[type="radio"]
+        display: none
+    &__wrapper
+        text-align: center
+        padding: 61px 0 33px 0
+    &__header
+        padding-bottom: 25px
+    &__info
+        margin: auto
+        padding-bottom: 27px
+        width: 800px
+    &__radios
+        display: flex
+        justify-content: space-between
+        width: 590px
+        margin: auto auto 69px auto
+        &-switch
+            padding: 7px 17px 8px 17px
+            border: 1px solid #EBEBEB
+            border-radius: 3px
+            color: #8C8C8C
+            font-family: $font-mon
+            font-size: 14px
+            font-weight: 300
+    &__portfolio
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-around
+        &-card
+            width: 370px
+            margin-bottom: 69px
+            text-align: left
+            & figcaption
+                padding: 26px 23px 26px 23px
+                background-color: #FBFAF8
+            &-header
+                font-family: $font-ral
+                color: #C7B299
+                margin-bottom: 8px
+                font-weight: 500
+                font-size: 20px
+            &-text
+                font-size: 14px
+                color: #D1D1D1
