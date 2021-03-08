@@ -27,9 +27,10 @@ a
 
 img
     display: block
+    max-width: 100%
 
 .container
-    width: 1280px
+    max-width: 1280px
     margin: 0 auto
 
 .btn
@@ -48,11 +49,13 @@ img
     background: url(../img/bg_header.jpg) no-repeat
     background-position-x: center
     background-size: cover
+    padding-top: 40px
+    padding-bottom: 50px
     &__wrapper
-        padding: 40px 0px 50px 0px
         display: flex
         flex-direction: column
         align-items: center
+        position: relative
     &__info
         display: flex
         justify-content: space-between
@@ -76,9 +79,8 @@ img
                 margin-right: 0px
     &__slider
         padding: 315px 0 315px 0
-        width: 570px
+        max-width: 570px
         text-align: center
-        position: relative
         & p
             color: white
         &-text-top
@@ -92,15 +94,15 @@ img
             margin-bottom: 40px
             line-height: 20px
         &-arrow-left
-            top: 40%
+            top: 47%
             position: absolute
-            right: 100%
-            margin-right: 475px
+            left: 0
+            margin-left: 156px
         &-arrow-right
-            top: 40%
+            top: 47%
             position: absolute
-            left: 100%
-            margin-left: 475px
+            right: 0
+            margin-right: 156px
         &-dots
             display: flex
             width: 90px
@@ -120,8 +122,10 @@ img
 
 .services
     &__wrapper
-        padding: 85px 0 90px 0
+        padding-top: 85px
+        padding-bottom: 90px
         display: flex
+        flex-wrap: wrap
         justify-content: space-around
     &__list
         width: 270px
@@ -167,7 +171,7 @@ img
     &__info
         margin: auto
         padding-bottom: 40px
-        width: 770px
+        max-width: 770px
     & img
         width: 100%
         margin-bottom: -1px
@@ -177,7 +181,8 @@ img
     &__wrapper
         display: flex
         justify-content: space-between
-        padding: 44px 0 41px 0
+        padding-top: 44px
+        padding-bottom: 41px
     & h3
         font-family: $font-ral
         font-size: 28px
@@ -208,11 +213,11 @@ img
     &__info
         margin: auto
         margin-bottom: 27px
-        width: 800px
+        max-width: 800px
     &__radios
         display: flex
         justify-content: space-between
-        width: 590px
+        max-width: 590px
         margin: auto auto 69px auto
         &-switch
             padding: 7px 17px 8px 17px
@@ -226,10 +231,12 @@ img
         display: flex
         flex-wrap: wrap
         justify-content: space-around
+        max-width: 1230px
+        margin: auto
         &-card:first-of-type
             margin-bottom: 69px
         &-card
-            width: 370px
+            max-width: 370px
             margin-bottom: 49px
             text-align: left
             & img
@@ -282,6 +289,7 @@ img
 .video
     position: relative
     overflow: hidden
+    margin-bottom: 78px
     &__wrapper
         text-align: center
         padding: 250px 0 195px 0
@@ -293,7 +301,7 @@ img
         min-height: 100%
         top: 50%
         transform: translateY(-50%)
-        opacity: .9
+        filter: brightness(0.5)
         z-index: 0
     & svg
         margin-bottom: 18px
@@ -305,8 +313,331 @@ img
     &__info
         margin: auto
         margin-bottom: 18px
-        width: 570px
+        max-width: 570px
         color: white
     &__time
         color: #C7B299
         font-weight: 400
+
+.mobile
+    &__wrapper
+        display: flex
+        justify-content: center
+    &__img
+        margin-right: 65px
+    &__info
+        margin-bottom: 18px
+        padding: 112px 0 0 0
+        &-header
+            margin-bottom: 20px
+            font-weight: 600
+            font-size: 30px
+            color: #555555
+        &-text
+            max-width: 670px
+            margin-bottom: 50px
+            color: #8C8C8C
+            line-height: 20px
+        & ul
+            padding: 0 0 0 65px
+        &-list
+            margin-bottom: 10px
+            color: #8C8C8C
+            line-height: 20px
+            font-family: $font-mon
+            &::before
+                content: '\f138 '
+                font-family: 'FontAwesome'
+                margin-right: 8px
+                font-weight: 600
+                color: #C7B299
+                font-size: 21px
+
+.successes
+    padding-top: 36px
+    padding-bottom: 34px
+    background: radial-gradient(94.87% 15543.47% at 4.58% 100%, #211B19 0%, #4E3326 100%)
+    margin-bottom: 100px
+    &__wrapper
+        display: flex
+        justify-content: center
+    &__list
+        margin-right: 70px
+        &:last-of-type
+            margin-right: 0px
+        & svg
+            margin: auto
+            display: block
+            margin-bottom: 30px
+        &-header
+            text-align: center
+            font-family: $font-mon
+            font-weight: 300
+            font-size: 48px
+            line-height: 60px
+            color: white
+        &-info
+            text-align: center
+            font-family: $font-mon
+            font-weight: 300
+            font-size: 14px
+            line-height: 17px
+            color: #C7B299
+            &::after
+                content: ''
+                border-bottom: 2px solid #FFFFFF
+                display: block
+                width: 30px
+                margin: 0 auto
+                margin-top: 30px
+
+.posts
+    margin-bottom: 38px
+    &__wrapper
+        text-align: center
+    &__header
+        margin-bottom: 25px
+    &__info
+        margin: auto
+        margin-bottom: 30px
+        max-width: 770px
+    &__list
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+        & figure
+            position: relative
+        &-card
+            max-width: 370px
+            text-align: left
+            margin-bottom: 55px
+            &:hover img
+                filter: brightness(0.5)
+            &:hover figcaption
+                background-color: #352F2D
+            &:hover .posts__list-card-header
+                color: #C7B299
+            &:hover .posts__list-card-data-number
+                background: #C7B199
+            &:hover .posts__list-card-data-month
+                background: #A48D71
+            &:hover .posts__list-card-text
+                color: white
+            & figcaption
+                padding: 31px 23px 22px 23px
+                background-color: #FBFAF8
+                border-left: 1px solid #B3B3B3
+                border-right: 1px solid #B3B3B3
+                border-bottom: 1px solid #B3B3B3
+                box-sizing: border-box
+            &-header
+                font-family: $font-ral
+                color: #555555
+                margin-bottom: 22px
+                font-weight: 500
+                font-size: 20px
+            &-data
+                position: absolute
+                top: 17px
+                left: 23px
+                text-align: center
+                &-number
+                    font-size: 30px
+                    font-family: $font-mon
+                    background: #363636
+                    border-radius: 3px 3px 0px 0px
+                    padding: 1px 7px
+                    line-height: 37px
+                    color: white
+                &-month
+                    font-size: 12px
+                    font-family: $font-rob
+                    background: #242424
+                    font-weight: 400
+                    border-radius: 0px 0px 3px 3px
+                    padding: 5px 13px
+                    color: white
+            &-text
+                font-size: 14px
+                line-height: 22px
+                color: #000000
+                margin-bottom: 17px
+            &-link
+                font-family: $font-mon
+                font-weight: 300
+                color: #C7B299
+                font-size: 14px
+                &::after
+                    content: '\f0da '
+                    font-family: fontAwesome
+                    margin-left: 15px
+                    font-size: 14px
+    &__btn
+        border: none
+        background-color:
+        padding: 0px
+        outline: none
+        background-color: white
+        &-prev
+            margin-right: 18px
+        &-next
+            transform: scale(-1, 1)
+        &:hover path
+            fill: #C7B299
+
+@media screen and (min-width: 850px) and (max-width: 1024px)
+    .container
+        padding-left: 15px
+        padding-right: 15px
+    .header__info
+        align-items: center
+        flex-direction: column
+        & img
+            margin-bottom: 25px
+    .header__slider
+        &-arrow-left
+            margin-left: 70px
+        &-arrow-right
+            margin-right: 70px
+    .services
+        &__wrapper
+            width: 80%
+        &__list:first-of-type
+            margin-bottom: 30px
+    .mobile
+        &__img
+            margin-right: 35px
+        &__info ul
+            padding: 0 0 0 0px
+    .posts__list
+        justify-content: space-around
+
+@media screen and (min-width: 600px) and (max-width: 849px)
+    .container
+        padding-left: 15px
+        padding-right: 15px
+    .header
+        &__info
+            justify-content: space-around
+        &__menu
+            &::before
+                content: '\f0c9 '
+                font-family: FontAwesome
+                font-size: 25px
+                color: white
+                margin-right: 25px
+            & a
+                display: none
+        &__slider
+            &-arrow-left
+                display: none
+            &-arrow-right
+                display: none
+    .services
+        &__list:first-of-type
+            margin-bottom: 30px
+    .mobile
+        &__img
+            display: none
+        &__info
+            padding: 0px 0 0 0
+            margin-bottom: 78px
+            & ul
+                padding: 0 0 0 0px
+    .posts__list
+        justify-content: space-around
+
+    .successes
+        &__wrapper
+            display: flex
+            justify-content: center
+            flex-wrap: wrap
+        &__list
+            display: flex
+            flex-direction: column
+            margin-right: 40px
+            &-header
+                font-size: 30px
+    .theme
+        & h3
+            font-size: 18px
+        &__text
+            font-size: 14px
+        .btn
+            padding: 10px 20px 10px 20px
+
+@media screen and (max-width: 600px)
+    .container
+        padding-left: 15px
+        padding-right: 15px
+    .header
+        &__info
+            justify-content: space-around
+        &__menu
+            & svg
+                margin-right: 15px
+            &::before
+                content: '\f0c9 '
+                font-family: FontAwesome
+                font-size: 25px
+                color: white
+                margin-right: 15px
+            & a
+                display: none
+        &__slider
+            &-text-top
+                line-height: 40px
+            &-arrow-left
+                display: none
+            &-arrow-right
+                display: none
+    .services
+        &__list
+            margin-bottom: 30px
+            &:last-of-type
+                margin-bottom: 0px
+    .projects
+        &__wrapper
+            text-align: center
+        &__header
+            margin-bottom: 25px
+        &__radios
+            display: flex
+            justify-content: center
+            flex-wrap: wrap
+            &-switch
+                margin: 0 5px 10px
+
+    .mobile
+        &__img
+            display: none
+        &__info
+            padding: 0px 0 0 0
+            margin-bottom: 78px
+            & ul
+                padding: 0 0 0 0px
+    .posts__list
+        justify-content: space-around
+    .successes
+        &__wrapper
+            display: flex
+            justify-content: space-around
+            flex-wrap: wrap
+        &__list
+            display: flex
+            flex-direction: column
+            margin-right: 20px
+            margin-left: 20px
+            margin-bottom: 40px
+            &:nth-last-of-type
+                margin-bottom: 0px
+            &-header
+                font-size: 30px
+    .theme
+        text-align: center
+        & h3
+            font-size: 18px
+        &__text
+            font-size: 14px
+        .btn
+            padding: 10px 20px 10px 20px
